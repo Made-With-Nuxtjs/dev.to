@@ -5,23 +5,16 @@
       offset-md="2"
     >
       <v-container class="py-0 fill-height">
-        <v-avatar
-          color="black"
-          size="48"
-        >
-          <v-icon size="46" class="white--text">
-            mdi-dev-to
-          </v-icon>
-        </v-avatar>
-
-        <!-- <v-btn
-          v-for="link in links"
-          :key="link"
-          text
-        >
-          {{ link }}
-        </v-btn> -->
-
+        <nuxt-link to="#" class="text-decoration-none">
+          <v-avatar
+            color="black"
+            size="48"
+          >
+            <v-icon size="50" class="white--text">
+              mdi-dev-to
+            </v-icon>
+          </v-avatar>
+        </nuxt-link>
         <v-responsive max-width="400" class="ml-3">
           <v-text-field
             dense
@@ -38,14 +31,18 @@
           <v-btn
             depressed
           >
-            Log in
+            <nuxt-link to="#" class="text-decoration-none">
+              Log in
+            </nuxt-link>
           </v-btn>
-          <v-btn
-            depressed
-            color="primary"
-          >
-            Create Account
-          </v-btn>
+          <nuxt-link to="#" class="text-decoration-none">
+            <v-btn
+              depressed
+              color="primary"
+            >
+              Create Account
+            </v-btn>
+          </nuxt-link>
         </v-responsive>
       </v-container>
     </v-col>
