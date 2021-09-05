@@ -18,12 +18,14 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :elevation="1" :clipped-left="clipped" fixed app>
+    <!-- <v-app-bar :elevation="1" :clipped-left="clipped" fixed app>-->
+    <v-app-bar
+      :elevation="1"
+      :clipped-left="clipped"
+      fixed
+      app
+    >
       <Header />
-      <!-- ///Header components -->
-      <!-- <v-toolbar-title v-text="title" /> -->
-
-      <!-- <v-spacer /> -->
     </v-app-bar>
     <v-main>
       <v-container>
@@ -53,6 +55,12 @@ export default {
           title: 'Inspire',
           to: '/inspire'
         }
+      ],
+      links: [
+        'Dashboard',
+        'Messages',
+        'Profile',
+        'Updates'
       ],
       title: 'Vuetify.js'
     }
