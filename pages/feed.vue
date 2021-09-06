@@ -4,8 +4,6 @@
       <v-card
         flat
       >
-        <MenuButtons />
-        <!--
         <v-card
           v-for="n in 10"
           :key="n"
@@ -65,44 +63,8 @@
               <v-icon>mdi-dev-to</v-icon>
             </v-btn>
           </v-card-actions>
-        </v-card> -->
-      </v-card>
-    </v-col>
-    <v-col cols="3" sm="12" md="3" lg="3">
-      <v-card
-        class="mx-auto"
-        max-width="344"
-      >
-        <v-img
-          class="d-flex justify-center"
-          src="/dev-left-logo.png"
-          width="800px"
-        />
-        <div class="pa-3">
-          <h4>
-            <nuxt-link to="#" class="text-decoration-none">
-              Forem Dev
-            </nuxt-link>
-            <span class="text-wrap">is a community dedicated to discussing and discovering the open source community software that powers DEV.</span>
-          </h4>
-          <a href="#" class="text-decoration-none">
-            <v-icon>mdi-arrow-right</v-icon> <span>Join</span>
-          </a>
-        </div>
+        </v-card>
       </v-card>
     </v-col>
   </v-row>
 </template>
-
-<script>
-export default {
-  data: () => ({
-    bars: [
-      { class: '' },
-      { class: '', dark: true },
-      { class: 'primary', dark: true },
-      { class: 'elevation-0' }
-    ]
-  })
-}
-</script>

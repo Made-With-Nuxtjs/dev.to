@@ -1,38 +1,39 @@
 <template>
   <v-app>
-    <v-navigation-drawer :clipped="clipped" fixed app>
-      <v-card
-        class="mx-auto"
-        max-width="344"
-        outlined
-      >
-        <v-list-item three-line>
-          <v-list-item-content>
-            <!-- <div class="text-overline mb-4"> -->
-            <h2 class="pa-2">
-              <a href="#">DEV Community</a> is a
-              community of 686,873 amazing developers
-            </h2>
-            <!-- </div> -->
-            <v-list-item-title class="text-h5 mb-1">
-              Headline 5
-            </v-list-item-title>
-            <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
+    <v-navigation-drawer
+      v-model="drawer"
+      :clipped="clipped"
+      fixed
+      app
+    >
+      <v-card class="ma-3" :elevation="1">
+        <h2 class="pa-2">
+          <a href="#" class="text-decoration-none">DEV Community</a> is a
+          community of 686,873 amazing developers
+        </h2>
+        <v-card-text>
+          We're a place where coders share, stay up-to-date and grow their careers.
+        </v-card-text>
+        <nuxt-link to="#" class="text-decoration-none ">
+          <div class="ma-3">
+            <v-btn
+              block
+              depressed
+              color="primary"
+              class="text-capitalize"
+            >
+              Create new Account
+            </v-btn>
+          </div>
+        </nuxt-link>
 
-        <v-card-actions>
-          <v-btn
-            outlined
-            rounded
-            text
-          >
-            Button
+        <div class="text-center">
+          <v-btn depressed class="text-capitalize">
+            Log in
           </v-btn>
-        </v-card-actions>
+        </div>
       </v-card>
-
-      <v-list>
+      <v-list flat tile>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -49,22 +50,36 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <!-- <v-app-bar :elevation="1" :clipped-left="clipped" fixed app>-->
     <v-app-bar
-      :elevation="1"
       :clipped-left="clipped"
       fixed
       app
-      tile
+      @click.stop=" !clipped"
     >
-      <Header />
+      <v-app-bar-nav-icon class="d-flex d-sm-none" @click.stop="drawer = !drawer" />
+      <v-btn
+        icon
+        @click.stop="miniVariant = !miniVariant"
+      />
+
+      <Header class="d-none d-sm-flex" />
+      <HeaderMobile class="d-flex d-sm-none" />
+      <v-spacer />
+
+      <!-- @click.stop="rightDrawer = !rightDrawer" -->
+
+      <!-- <v-icon>mdi-menu</v-icon> -->
     </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
+
+    <v-footer
+      :absolute="!fixed"
+      app
+    >
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -75,7 +90,8 @@ export default {
   data () {
     return {
       clipped: true,
-      fixed: true,
+      drawer: false,
+      fixed: false,
       items: [
         {
           icon: 'mdi-apps',
@@ -86,9 +102,15 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'Dev Post',
+          to: '/post'
         }
       ],
-
+      right: true,
+      // rightDrawer: false,
       title: 'Vuetify.js'
     }
   }

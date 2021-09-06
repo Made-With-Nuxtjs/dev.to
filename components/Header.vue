@@ -1,19 +1,17 @@
 <template>
   <v-row no-gutters>
     <v-col
-      cols="8"
+      cols="12"
       offset-md="2"
     >
-      <v-container class="py-0 fill-height">
+      <v-container class="fill-height">
         <nuxt-link to="#" class="text-decoration-none">
-          <v-avatar
+          <v-icon
             color="black"
-            size="48"
+            size="70"
           >
-            <v-icon size="50" class="white--text">
-              mdi-dev-to
-            </v-icon>
-          </v-avatar>
+            mdi-dev-to
+          </v-icon>
         </nuxt-link>
         <v-responsive max-width="400" class="ml-3">
           <v-text-field
@@ -27,11 +25,11 @@
           />
         </v-responsive>
         <v-spacer />
-        <v-responsive max-width="400">
+        <v-responsive max-width="280">
           <v-btn
             depressed
           >
-            <nuxt-link to="#" class="text-decoration-none">
+            <nuxt-link to="#" class="text-decoration-none text-capitalize">
               Log in
             </nuxt-link>
           </v-btn>
@@ -39,6 +37,7 @@
             <v-btn
               depressed
               color="primary"
+              class="text-capitalize"
             >
               Create Account
             </v-btn>
