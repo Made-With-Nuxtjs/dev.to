@@ -8,10 +8,7 @@
       <v-tab>City</v-tab>
       <v-tab>Abstract</v-tab>
 
-      <v-tab-item
-        v-for="n in 3"
-        :key="n"
-      >
+      <v-tab-item>
         <v-container fluid>
           <v-row>
             <v-col
@@ -21,8 +18,41 @@
               md="4"
             >
               <v-img
-                :src="`https://picsum.photos/500/300?image=${i * n * 5 + 10}`"
-                :lazy-src="`https://picsum.photos/10/6?image=${i * n * 5 + 10}`"
+                :src="`https://picsum.photos/500/300?image`"
+                aspect-ratio="1"
+              />
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-tab-item>
+      <v-tab-item>
+        <v-container fluid>
+          <v-row>
+            <v-col
+              v-for="i in 6"
+              :key="i"
+              cols="12"
+              md="4"
+            >
+              <v-img
+                :src="`https://picsum.photos/500/300?image`"
+                aspect-ratio="1"
+              />
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-tab-item>
+      <v-tab-item>
+        <v-container fluid>
+          <v-row>
+            <v-col
+              v-for="i in 6"
+              :key="i"
+              cols="12"
+              md="4"
+            >
+              <v-img
+                :src="`https://picsum.photos/500/300?image`"
                 aspect-ratio="1"
               />
             </v-col>
