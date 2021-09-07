@@ -5,7 +5,7 @@
       offset-md="2"
     >
       <v-container class="fill-height">
-        <nuxt-link to="#" class="text-decoration-none">
+        <nuxt-link to="/" class="text-decoration-none">
           <v-icon
             color="black"
             size="70"

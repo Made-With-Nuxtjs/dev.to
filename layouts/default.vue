@@ -65,10 +65,6 @@
       <Header class="d-none d-sm-flex" />
       <HeaderMobile class="d-flex d-sm-none" />
       <v-spacer />
-
-      <!-- @click.stop="rightDrawer = !rightDrawer" -->
-
-      <!-- <v-icon>mdi-menu</v-icon> -->
     </v-app-bar>
     <v-main>
       <v-container>
@@ -110,8 +106,7 @@ export default {
         }
       ],
       right: true,
-      // rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Dev.to'
     }
   }
 }
