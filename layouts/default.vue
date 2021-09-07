@@ -34,6 +34,11 @@
         </div>
       </v-card>
       <v-list flat tile>
+        <div class="pl-5">
+          <h4 class="text-capitalize">
+            DEV Community
+          </h4>
+        </div>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -91,17 +96,62 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Home',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: 'Sign In/Up',
           to: '/inspire'
         },
         {
           icon: 'mdi-post',
           title: 'Dev Post',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'Listings',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'Postcasts',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'Videos',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'Tags',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'FAQ',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'DEV Shop',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'Sponsors',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'About',
+          to: '/post'
+        },
+        {
+          icon: 'mdi-post',
+          title: 'Contact',
           to: '/post'
         }
       ],

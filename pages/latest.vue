@@ -4,7 +4,7 @@
       <v-card
         flat
       >
-        <MenuButtons />
+        <HomeTopNav />
       </v-card>
       <v-col cols="9" sm="12" md="12" lg="12">
         <v-card
