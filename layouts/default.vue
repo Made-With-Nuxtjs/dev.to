@@ -56,7 +56,7 @@
       app
       @click.stop=" !clipped"
     >
-      <v-app-bar-nav-icon class="d-flex d-sm-none" @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon class="d-flex d-md-none" @click.stop="drawer = !drawer" />
       <v-btn
         icon
         @click.stop="miniVariant = !miniVariant"
