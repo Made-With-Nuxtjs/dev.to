@@ -62,10 +62,6 @@
       @click.stop=" !clipped"
     >
       <v-app-bar-nav-icon class="d-flex d-md-none" @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      />
 
       <Header class="d-none d-sm-flex" />
       <HeaderMobile class="d-flex d-sm-none" />
@@ -155,7 +151,7 @@ export default {
           to: '/post'
         }
       ],
-      right: true,
+      right: false,
       title: 'Dev.to'
     }
   }

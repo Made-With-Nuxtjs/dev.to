@@ -65,7 +65,7 @@
       </v-card>
       <PostBottomNav />
     </v-col>
-    <v-col cols="3" sm="12" md="3" lg="3">
+    <v-col cols="12" sm="12" md="3" lg="3">
       <PostPageRight />
     </v-col>
   </v-row>
