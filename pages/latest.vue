@@ -1,14 +1,14 @@
 <template>
   <v-row>
-    <v-col>
+    <v-col cols="12" md="9" lg="9">
       <HomeTopNav />
 
-      <v-col cols="9" sm="12" md="12" lg="12">
+      <v-col cols="12" md="12" lg="12">
         <!-- /////////With-image card//////// -->
 
         <v-card
-          v-for="week in 10"
-          :key="week"
+          v-for="img in 10"
+          :key="img"
           class="mx-auto mb-3"
           width="auto"
         >
@@ -52,8 +52,8 @@
           >
             <nuxt-link to="#" class="text-decoration-none text--secondary">
               <small
-                v-for="chip in 5"
-                :key="chip"
+                v-for="chips in 5"
+                :key="chips"
                 class="pl-3"
               >#<span>wedev</span>
               </small>
@@ -126,8 +126,8 @@
           >
             <nuxt-link to="#" class="text-decoration-none text--secondary">
               <small
-                v-for="chip2 in 5"
-                :key="chip2"
+                v-for="chip in 5"
+                :key="chip"
                 class="pl-3"
               >#<span>wedev</span>
               </small>
@@ -160,7 +160,7 @@
         </v-card>
       </v-col>
     </v-col>
-    <v-col cols="12" sm="12" md="3" lg="3">
+    <v-col cols="3" sm="12" md="3" lg="3">
       <HomePageRight />
     </v-col>
   </v-row>

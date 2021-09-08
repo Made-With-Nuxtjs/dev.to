@@ -3,9 +3,9 @@
     <v-tabs
       color="deep-purple accent-4"
     >
-      <v-card left>
+      <v-card-title class="float-start">
         Post
-      </v-card>
+      </v-card-title>
       <v-spacer />
       <v-tabs-slider color="blue" />
       <v-tab>
