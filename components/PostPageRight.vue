@@ -20,9 +20,9 @@
         </v-img>
 
         <v-card-text>
-          <div class="font-weight-bold mb-2">
+          <v-card flat class="font-weight-bold mb-2">
             <nuxt-link to="#" class="text-decoration-none ">
-              <div class="ma-3">
+              <v-card flat class="ma-3">
                 <v-btn
                   block
                   depressed
@@ -31,11 +31,11 @@
                 >
                   Follow
                 </v-btn>
-              </div>
+              </v-card>
             </nuxt-link>
-          </div>
+          </v-card>
 
-          <div>
+          <v-card flat>
             <span class="pb-2"> Making databases fun @Prisma | Learning, building & Teaching | Quirky</span>
             <h4 class="text-uppercase">
               Location
@@ -50,21 +50,21 @@
               Joined
             </h4>
             <span>  Mar 27, 2019</span>
-          </div>
+          </v-card>
         </v-card-text>
       </v-card>
-      <v-card width="400px" class="mt-5">
+      <v-card width="400px" class="mt-5" :class="{ 'on-hover': hover }">
         <v-card-text>
-          <div class="pb-4">
+          <v-card flat>
             <h2>
               More From
               <nuxt-link to="#" class="text-decoration-none pl-2 ">
                 David Joe
               </nuxt-link>
             </h2>
-          </div>
+          </v-card>
 
-          <div class="pb-3">
+          <v-card flat class="py-3">
             <nuxt-link to="#" class="text-decoration-none">
               <h3 class="text--secondary">
                 NoCode Platform with React.
@@ -80,9 +80,9 @@
             <nuxt-link to="#" class="text-decoration-none">
               <span>#beginners</span>
             </nuxt-link>
-          </div>
+          </v-card>
           <v-divider />
-          <div class="py-3">
+          <v-card flat class="py-3">
             <nuxt-link to="#" class="text-decoration-none">
               <h3 class="text--secondary">
                 NoCode Platform with React.
@@ -98,9 +98,9 @@
             <nuxt-link to="#" class="text-decoration-none">
               <span>#beginners</span>
             </nuxt-link>
-          </div>
+          </v-card>
           <v-divider />
-          <div class="py-3">
+          <v-card flat class="py-3">
             <nuxt-link to="#" class="text-decoration-none">
               <h3 class="text--secondary">
                 NoCode Platform with React.
@@ -116,7 +116,7 @@
             <nuxt-link to="#" class="text-decoration-none">
               <span>#beginners</span>
             </nuxt-link>
-          </div>
+          </v-card>
         </v-card-text>
       </v-card>
     </v-row>
