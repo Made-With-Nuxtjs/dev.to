@@ -2,9 +2,10 @@
   <v-card flat>
     <v-tabs
       color="deep-purple accent-4"
-      right
     >
-      <v-toolbar-title><h3>Posts</h3></v-toolbar-title>
+      <v-card left>
+        Post
+      </v-card>
       <v-spacer />
       <v-tabs-slider color="blue" />
       <v-tab>

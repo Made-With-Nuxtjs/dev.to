@@ -1,8 +1,10 @@
 <template>
   <v-row justify="center">
-    <HomeTopNav />
+    <v-card flat>
+      <HomeTopNav />
+    </v-card>
 
-    <v-col cols="9" sm="12" md="12" lg="12">
+    <v-col cols="12" md="9" lg="9">
       <!-- /////////With-image card//////// -->
 
       <v-card
@@ -159,7 +161,7 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" sm="12" md="3" lg="3">
+    <v-col cols="" sm="12" md="3" lg="3">
       <HomePageRight />
     </v-col>
   </v-row>
