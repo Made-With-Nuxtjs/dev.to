@@ -1,4 +1,4 @@
-# dev.to
+# dev.to clone with Nuxt.js
 
 ## Build Setup
 
